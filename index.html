@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="وائل للتسويق الإلكتروني - إدارة منصات التواصل، صناعة المحتوى، والتسويق الرقمي.">
+<title>وائل | حلول التسويق الإلكتروني</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#101b35;--navy2:#172747;--blue:#3978f6;--cyan:#50c8d9;--ink:#172238;--muted:#69758a;--pale:#f4f7fc;--white:#fff;--line:#e7ecf4}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:82px}
+body{font-family:"Cairo",sans-serif;color:var(--ink);line-height:1.85;background:#fff}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+header{height:78px;position:sticky;top:0;z-index:50;background:rgba(12,22,43,.97);backdrop-filter:blur(12px);color:white;border-bottom:1px solid #ffffff16}
+.nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:900;font-size:22px}
+.logo-icon{width:39px;height:39px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,var(--blue),var(--cyan));color:#07152b;font:900 21px Arial}
+.logo b{color:var(--cyan)}
+.navlinks{display:flex;gap:27px;font-size:13px;color:#d2d9e7}
+.navlinks a:hover{color:var(--cyan)}
+.navbtn,.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:10px;font-weight:800;transition:.2s}
+.navbtn{padding:10px 17px;background:white;color:var(--navy);font-size:13px}
+.btn{padding:14px 22px;font-size:14px}
+.btn:hover,.navbtn:hover{transform:translateY(-3px)}
+.primary{background:linear-gradient(110deg,var(--blue),var(--cyan));color:#06152b;box-shadow:0 12px 30px #3978f633}
+.outline{border:1px solid #ffffff50;color:white}
+.menu{display:none;background:none;border:0;color:white;font-size:27px}
+.hero{background:radial-gradient(circle at 75% 30%,#244b8c70,transparent 35%),linear-gradient(120deg,#0c162b,#142746);color:white;padding:82px 0 90px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:55px}
+.kicker{display:inline-flex;align-items:center;gap:9px;border:1px solid #ffffff30;border-radius:40px;padding:6px 14px;color:#d7e4fb;font-size:12px}
+.kicker i{width:7px;height:7px;border-radius:50%;background:#55ddbb;box-shadow:0 0 12px #55ddbb}
+h1{font-size:clamp(43px,5.3vw,68px);line-height:1.3;letter-spacing:-1.5px;margin:24px 0 18px;font-weight:900}
+h1 span{background:linear-gradient(90deg,#61d5e5,#6b9cff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:#c0cce0;font-size:16px;max-width:560px;line-height:2.1}
+.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:28px}
+.hero-small{font-size:12px!important;color:#8495b1!important;margin-top:30px}
+.hero-visual{position:relative}
+.hero-photo{width:100%;height:430px;object-fit:cover;border-radius:24px;border:1px solid #ffffff30;box-shadow:0 30px 80px #0007}
+.photo-overlay{position:absolute;inset:0;border-radius:24px;background:linear-gradient(0deg,#0a1736a8,transparent 55%)}
+.stat-card{position:absolute;bottom:25px;right:-24px;background:#fff;color:var(--ink);border-radius:15px;padding:15px 20px;box-shadow:0 15px 40px #0003}
+.stat-card strong{display:block;font-size:17px}.stat-card small{color:var(--muted);font-size:11px}
+.float-label{position:absolute;top:25px;left:-18px;background:#fff;color:var(--navy);border-radius:12px;padding:12px 17px;font-size:12px;font-weight:800;box-shadow:0 10px 30px #0003}
+.trust{background:#f1f5fb;padding:22px 0}
+.trustrow{display:flex;justify-content:space-around;align-items:center;gap:20px;flex-wrap:wrap;color:#68758a;font-size:13px;font-weight:800}
+.trustrow span:before{content:"✦";color:var(--blue);margin-left:9px}
+section.block{padding:92px 0}
+.eyebrow{color:var(--blue);font-size:12px;font-weight:900;letter-spacing:.5px;margin-bottom:14px}
+.section-title{font-size:clamp(31px,4vw,45px);line-height:1.45;font-weight:900;color:var(--navy)}
+.section-title span{color:var(--blue)}
+.section-desc{color:var(--muted);font-size:14px;max-width:530px;margin-top:13px}
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:65px;align-items:center}
+.about-image{height:370px;width:100%;object-fit:cover;border-radius:20px}
+.about-copy p{color:#58657b;font-size:15px;line-height:2.2;margin-top:15px}
+.about-points{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:25px}
+.point{padding:13px;background:var(--pale);border-radius:10px;font-size:12px;font-weight:800}
+.point b{color:var(--blue);margin-left:7px}
+.services{background:var(--pale)}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:35px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.service{background:white;border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:.25s}
+.service:hover{transform:translateY(-6px);box-shadow:0 18px 45px #15294a13}
+.service img{width:100%;height:175px;object-fit:cover}
+.service-body{padding:21px}
+.service-icon{width:39px;height:39px;border-radius:11px;background:#eaf1ff;color:var(--blue);display:grid;place-items:center;font-size:20px;margin-bottom:12px}
+.service h3{font-size:17px;margin-bottom:7px;color:var(--navy)}
+.service p{font-size:12px;color:var(--muted);line-height:2}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.why-photo{width:100%;height:410px;object-fit:cover;border-radius:20px}
+.why-list{margin-top:24px;display:grid;gap:17px}
+.why-item{display:flex;gap:13px;align-items:flex-start}
+.check{flex:0 0 30px;height:30px;border-radius:50%;display:grid;place-items:center;background:#eaf1ff;color:var(--blue);font-weight:900}
+.why-item h3{font-size:14px}.why-item p{font-size:12px;color:var(--muted)}
+.steps{background:var(--navy);color:white}
+.steps .section-title{color:white}
+.step-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:36px}
+.step{padding:25px;border:1px solid #ffffff20;border-radius:15px;background:#ffffff08}
+.step-no{font:900 30px Arial;color:#68b9ff}
+.step h3{font-size:17px;margin:12px 0 6px}.step p{font-size:12px;color:#aebbd0}
+.contact{background:linear-gradient(120deg,#3978f6,#45b9d0);padding:65px 0;color:#07162d}
+.contact-inner{display:flex;align-items:center;justify-content:space-between;gap:25px}
+.contact h2{font-size:clamp(29px,4vw,42px);line-height:1.4}
+.contact p{font-size:14px;margin-top:8px;color:#102e53}
+.contact .btn{background:#0d1a32;color:white;white-space:nowrap}
+footer{background:#080f1e;color:#a9b5c9;padding:28px 0}
+.foot{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;font-size:11px}
+.foot .logo{color:white;font-size:18px}
+.social{display:flex;gap:15px}.social a:hover{color:var(--cyan)}
+@media(max-width:850px){.hero-grid,.about-grid,.why-grid{grid-template-columns:1fr}.hero-visual{max-width:620px;margin:20px auto 0;width:90%}.hero-photo{height:350px}.about-image,.why-photo{height:330px}.cards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.wrap{width:calc(100% - 30px)}header{height:70px}.menu{display:block}.navbtn{display:none}.navlinks{display:none;position:absolute;top:70px;right:0;left:0;background:#101b35;padding:20px;flex-direction:column;gap:15px}.navlinks.show{display:flex}.hero{padding:60px 0}.hero-grid{gap:25px}.hero-copy{text-align:center}.hero p{font-size:14px}.actions{justify-content:center}.hero-photo{height:280px}.float-label{left:-5px}.stat-card{right:-5px}.trustrow{font-size:11px}.block{padding:65px 0!important}.section-head{display:block}.cards{grid-template-columns:1fr}.service img{height:190px}.step-grid{grid-template-columns:1fr}.contact-inner{display:block;text-align:center}.contact .btn{margin-top:22px}.foot{justify-content:center;text-align:center;flex-direction:column}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap nav">
+  <a class="logo" href="#home"><span class="logo-icon">W</span><span>وائل<b>.</b></span></a>
+  <nav class="navlinks" id="navlinks"><a href="#about">من أنا</a><a href="#services">الخدمات</a><a href="#why">لماذا أنا؟</a><a href="#steps">طريقة العمل</a><a href="#contact">تواصل معي</a></nav>
+  <a class="navbtn" href="https://wa.me/972597849579" target="_blank" rel="noopener">ابدأ التواصل ↗</a>
+  <button class="menu" id="menu" aria-label="فتح القائمة">☰</button>
+ </div>
+</header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid">
+ <div class="hero-copy">
+  <span class="kicker"><i></i> حلول تسويق رقمي لأعمالك</span>
+  <h1>خلّي مشروعك<br><span>يوصل للجمهور الصح.</span></h1>
+  <p>أنا وائل، أساعد أصحاب المشاريع والأعمال على بناء حضور رقمي مميز من خلال إدارة منصات التواصل، وصناعة المحتوى، والتسويق الإلكتروني.</p>
+  <div class="actions"><a class="btn primary" href="https://wa.me/972597849579" target="_blank" rel="noopener">تواصل معي عبر واتساب ↗</a><a class="btn outline" href="#services">اكتشف خدماتي ↓</a></div>
+  <p class="hero-small">استراتيجية واضحة • محتوى هادف • تواصل مستمر</p>
+ </div>
+ <div class="hero-visual">
+  <img class="hero-photo" src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1100&q=85" alt="فريق يعمل على التخطيط والتسويق">
+  <div class="photo-overlay"></div><div class="float-label">أفكار تتحول إلى نتائج</div>
+  <div class="stat-card"><strong>حضور رقمي أقوى ✦</strong><small>ابدأ ببناء صورة واضحة لمشروعك</small></div>
+ </div>
+</div></section>
+<div class="trust"><div class="wrap trustrow"><span>تخطيط تسويقي</span><span>إدارة محتوى</span><span>منصات التواصل</span><span>تطوير الحضور الرقمي</span></div></div>
+<section class="block" id="about"><div class="wrap about-grid">
+ <div><div class="eyebrow">01 / من أنا</div><h2 class="section-title">خلينا نعرّف الناس<br><span>على مشروعك.</span></h2><p class="section-desc">كل مشروع عنده قصة، ومهمتي أساعدك تعرضها بالطريقة المناسبة للجمهور.</p>
+ <div class="about-points"><div class="point"><b>✓</b> فهم أهداف مشروعك</div><div class="point"><b>✓</b> أفكار تناسب جمهورك</div><div class="point"><b>✓</b> تواصل وتنظيم واضح</div><div class="point"><b>✓</b> تطوير مستمر</div></div></div>
+ <div><img class="about-image" src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1000&q=85" alt="تعاون فريق في بيئة عمل"><div class="about-copy"><p>أركز على تقديم حلول عملية تناسب طبيعة كل نشاط تجاري، بدايةً من فهم الفكرة والجمهور، وصولاً إلى تنظيم المحتوى والحضور على المنصات الرقمية.</p></div></div>
+</div></section>
+<section class="block services" id="services"><div class="wrap">
+ <div class="section-head"><div><div class="eyebrow">02 / خدماتي</div><h2 class="section-title">كل ما يحتاجه مشروعك<br><span>ليظهر بشكل أفضل.</span></h2></div><p class="section-desc">نختار الخدمات المناسبة حسب احتياجك ومرحلة مشروعك.</p></div>
+ <div class="cards">
+  <article class="service"><img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&w=800&q=80" alt="منصات التواصل الاجتماعي"><div class="service-body"><div class="service-icon">◉</div><h3>إدارة منصات التواصل</h3><p>تنظيم وإدارة صفحات التواصل، وجدولة المنشورات، ومتابعة التفاعل مع الجمهور.</p></div></article>
+  <article class="service"><img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=800&q=80" alt="كتابة وصناعة المحتوى"><div class="service-body"><div class="service-icon">✎</div><h3>صناعة المحتوى</h3><p>كتابة أفكار ونصوص تسويقية تساعدك على توصيل رسالتك وعرض خدماتك بوضوح.</p></div></article>
+  <article class="service"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="تحليل التسويق الرقمي"><div class="service-body"><div class="service-icon">↗</div><h3>التسويق الرقمي</h3><p>المساعدة في تحديد الجمهور والأهداف ووضع خطة تسويقية مناسبة لنشاطك.</p></div></article>
+  <article class="service"><img src="https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&w=800&q=80" alt="التخطيط للحملات الإعلانية"><div class="service-body"><div class="service-icon">◎</div><h3>تنسيق الحملات الإعلانية</h3><p>تجهيز أفكار الحملات ورسائلها بما يتناسب مع أهداف النشاط والميزانية المحددة.</p></div></article>
+  <article class="service"><img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&q=80" alt="استشارات وتخطيط"><div class="service-body"><div class="service-icon">✦</div><h3>استشارات تسويقية</h3><p>مناقشة وضع مشروعك واقتراح خطوات عملية لتحسين ظهوره الرقمي.</p></div></article>
+  <article class="service"><img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=800&q=80" alt="بناء استراتيجية فريق العمل"><div class="service-body"><div class="service-icon">⌁</div><h3>بناء الحضور الرقمي</h3><p>ترتيب الهوية والرسائل الأساسية لتقديم مشروعك بصورة متناسقة واحترافية.</p></div></article>
+ </div>
+</div></section>
+<section class="block" id="why"><div class="wrap why-grid">
+ <div><img class="why-photo" src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1000&q=85" alt="جلسة عمل وتخطيط لمشروع"></div>
+ <div><div class="eyebrow">03 / لماذا نعمل معاً؟</div><h2 class="section-title">شغل منظم،<br><span>وتواصل واضح.</span></h2><p class="section-desc">أهتم أن تكون خطوات العمل مفهومة ومبنية على احتياج مشروعك الحقيقي.</p>
+ <div class="why-list">
+  <div class="why-item"><span class="check">✓</span><div><h3>اهتمام بطبيعة مشروعك</h3><p>لا نستخدم خطة واحدة للجميع؛ نبدأ بفهم نشاطك وجمهورك.</p></div></div>
+  <div class="why-item"><span class="check">✓</span><div><h3>أهداف وخطوات واضحة</h3><p>نتفق على المطلوب وآلية العمل قبل البدء.</p></div></div>
+  <div class="why-item"><span class="check">✓</span><div><h3>متابعة وتطوير</h3><p>نراجع ما يتم تنفيذه ونحدد فرص التحسين باستمرار.</p></div></div>
+ </div></div>
+</div></section>
+<section class="block steps" id="steps"><div class="wrap"><div class="eyebrow">04 / طريقة العمل</div><h2 class="section-title">ثلاث خطوات <span>لبداية قوية.</span></h2><div class="step-grid">
+ <article class="step"><div class="step-no">01</div><h3>نتعرف على مشروعك</h3><p>تخبرني عن نشاطك، خدماتك، والجمهور الذي تريد الوصول إليه.</p></article>
+ <article class="step"><div class="step-no">02</div><h3>نحدد ما تحتاجه</h3><p>نختار الخدمات والأولويات ونرتب خطة عمل تناسب أهدافك.</p></article>
+ <article class="step"><div class="step-no">03</div><h3>نبدأ ونتابع</h3><p>ننطلق في التنفيذ ونتواصل لمراجعة التقدم والخطوات التالية.</p></article>
+</div></div></section>
+<section class="contact" id="contact"><div class="wrap contact-inner"><div><h2>عندك مشروع وبدك تطوّره؟<br>خلينا نبدأ الحديث.</h2><p>أرسل لي رسالة واحكي لي عن فكرتك واحتياجك التسويقي.</p></div><a class="btn" href="https://wa.me/972597849579?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D9%88%D8%A7%D8%A6%D9%84%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%D9%83." target="_blank" rel="noopener">تواصل عبر واتساب ↗</a></div></section>
+</main>
+<footer><div class="wrap foot"><a class="logo" href="#home"><span class="logo-icon">W</span><span>وائل<b>.</b></span></a><span>التسويق الذكي يبدأ بفهم مشروعك.</span><div class="social"><a href="https://wa.me/972597849579" target="_blank" rel="noopener">واتساب</a><a href="#contact">تواصل</a></div><span>© <span id="year"></span> وائل</span></div></footer>
+<script>
+const menu=document.getElementById('menu'),nav=document.getElementById('navlinks');
+menu.addEventListener('click',()=>nav.classList.toggle('show'));
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('show')));
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body></html>
